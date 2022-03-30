@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B6CCCF"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/conter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/conter1"
+                android:background="@drawable/block_stail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:onClick="goweb1"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:riv_corner_radius="15dip"
+                    app:riv_mutate_background="true"
+                    app:riv_tile_mode="repeat" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="24sp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_height="30dp"
+                    android:text="Человек-паук: Нет пути домой" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conter2"
+                android:background="@drawable/block_stail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:onClick="goweb2"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:riv_corner_radius="15dip"
+                    app:riv_mutate_background="true"
+                    app:riv_tile_mode="repeat" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="24sp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_height="30dp"
+                    android:text="Бэтмен" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/conter3"
+                android:background="@drawable/block_stail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:onClick="goweb3"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:riv_corner_radius="15dip"
+                    app:riv_mutate_background="true"
+                    app:riv_tile_mode="repeat" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="24sp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_height="30dp"
+                    android:text="Матрица: Воскрешение" />
+        </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Реклама" />
+</LinearLayout>
